@@ -1,6 +1,89 @@
+
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
+<!--
+    This page is dedicated to the memory of Daniel. A friend, coworker, and creator.
+-->
+
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Youth Digital">
+
+        <title>Youth Digital</title>
+
+        <link rel="shortcut icon" href="/site/assets/images/favicon.ico?v=2871910706">
+        <link rel="shortcut icon" sizes="16x16" href="/site/assets/images/icon-16x16.png?v=2871910706">
+
+        <link rel="apple-touch-icon-precomposed" href="/site/assets/images/icon-57x57.png?v=2871910706">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/site/assets/images/icon-72x72.png?v=2871910706">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/site/assets/images/icon-114x114.png?v=2871910706">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/site/assets/images/icon-144x144.png?v=2871910706">
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+                <link href="/site/css/.cache/3ff91f36c8abe28fd7b8e34579d83da6_2871910706.css" rel="stylesheet" media="screen" type="text/css">
+
+                <script src="/site/js/.cache/6c7fa1850ec284367fdd18faa2e46780_2871910706.js"></script>
+
+    </head>
 <body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P2FC9X"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P2FC9X');</script>
+    <!-- End Google Tag Manager -->
+
+            <style>
+    #background {
+        background-image: url( /site/assets/images/backgrounds/default.jpg);
+    }
+    </style>
+    <div id="background"></div>
+    
+            <div class="fixed">
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                    <a href="/courses"><img id="logo" src="/site/assets/images/logo.png"></a>
+                </li>
+                                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                            </ul>
+
+                        <section class="top-bar-section">
+
+                <ul class="left">
+                    <li><a href="/courses"><div>courses</div></a></li>
+                                        <li><a href="#" data-reveal-id="projects-modal"><div>projects</div></a></li>
+                                        <li><a href="/portal"><div>portal</div></a></li>
+                                                                                <li><a href="#" data-reveal-id="help-modal"><div id="help-button">help<div id="ticket-update-count" class="label round"></div></div></a></li>
+                                                                            </ul>
+
+                <ul class="right">
+                    <li>
+                        <a class="profile-button hide-for-small" href="/r/site/user/profile" title="You are logged in as trorca15">
+                            <img src="/r/site/user/getAvatar?cb=b2688d00d4a31c5770e304bc472664d9">
+                        </a>
+                        <a class="show-for-small" href="/r/site/user/profile">My Profile</a>
+                    </li>
+                    <li class="show-for-small">
+                        <a class="logout-button" href="/r/site/user/logout">Logoff</a>
+                    </li>
+                    <li class="hide-for-small">
+                        <a class="logout-button icon-button" href="/r/site/user/logout"><i class="fi-power"></i></a>
+                    </li>
+                </ul>
+
+            </section>
+                    </nav>
+    </div>
+    
         <div class="row">
         <div id="page-content" class="large-12 columns">
         
@@ -136,5 +219,168 @@
         </td>
     </tr>
 </table>
-</body>
+
+<div id="course-grades-modal" class="reveal-modal small unselectable loading-small" data-reveal>
+    <header>
+        <h2></h2>
+        <div class="buttons">
+            <a class="close-reveal-modal icon-button"><i class="fi-x"></i></a>
+        </div>
+    </header>
+
+    <div class="course-grades-container">
+        <table class="has-total-line">
+            <thead>
+                <tr>
+                    <th>Module</th><th>Your<br>Points</th><th>Maximum<br>Points</th>
+                </tr>
+            </thead>
+            <tbody class="grades"></tbody>
+        </table>
+    </div>
+</div>
+<div id="course-badge-modal" class="reveal-modal medium unselectable" data-reveal>
+    <header>
+        <h2>Badge</h2>
+        <div class="buttons">
+            <a class="close-reveal-modal icon-button"><i class="fi-x"></i></a>
+        </div>
+    </header>
+
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <img src="">
+                </td>
+                <td>
+                    <div class="description"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+
+        
+        
+        Progress.init({
+            courseGradesModalId : '#course-grades-modal',
+            courseBadgeModalId : '#course-badge-modal',
+        });
+
+    });
+</script>
+        </div>
+
+        
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#modules a').on('click',function(){
+            $(this).parent().addClass('animated bounceIn');
+        });
+    });
+</script>
+
+
+		                        <footer class="page-footer">
+                    <a href="http://www.youthdigital.com" target="_blank">&copy; 2017 Youth Digital</a>
+                </footer>
+
+                                <nav id="footer-nav" class="fixed show-for-small">
+                    <a href="/r/courses/course/home" class="icon-button show-for-small" title="back to courses"><i class="fi-arrow-left"></i></a>                </nav>
+                
+                    </div>
+        </div>
+                
+				<div id="help-modal" class="reveal-modal medium" data-reveal data-options="close_on_background_click: false;"></div>
+		<div id="help-image-viewer"></div>
+		
+                    <div id="projects-modal" class="reveal-modal unselectable loading-large-grey" data-reveal>
+    <header class="modal-header">
+        <h2></a>Projects</h2>
+        <div class="buttons">
+        	<div class="flip">
+	            <a href="#" class="add-button icon-button"><i class="fi-plus"></i></a>
+				<a href="#" class="back-button icon-button"><i class="fi-arrow-left"></i></a>
+			</div>
+            <a href="#" class="close-reveal-modal icon-button"><i class="fi-x"></i></a>
+        </div>
+    </header>
+    <div id="no-websockets-error">
+        <img src="/site/assets/images/sad-aaron.png">
+        <p><h2>Uh oh!</h2>It appears your computer has some sort of Internet Filtering / Firewall
+        that is blocking access to our server designing platform. With your parent’s permission, please add the following URL (exactly as shown)
+        to the whitelist of any Internet filtering programs on your computer : <strong>youthdigital.com</strong></p>
+        <p>Wait a few minutes for the change to take effect and try clicking the Projects link again! If you have any questions or need further assistance, click this <a class="help-link" href="#">"Help"</a> link to send us a message!</p>
+    </div>
+    <section>
+    </section>
+</div>
+
+<script>
+	$(document).ready(function(){
+	    Projects.init();
+	});
+</script>
+        
+        
+        <div id="confirm-modal" class="reveal-modal small unselectable" data-reveal data-options="close_on_background_click: false;">
+            <header>
+                <h2></h2>
+                <div class="buttons">
+                    <a class="close-reveal-modal icon-button"><i class="fi-x"></i></a>
+                </div>
+            </header>
+            <p></p>
+            <div class="confirm-buttons">
+                <button class="yes">yes</button>
+                <button class="no">no</button>
+            </div>
+        </div>
+
+        <script>
+            $(document).foundation({
+                reveal: {
+					animation: 'fadeIn',
+ 					animation_speed: 250,
+                }
+            });
+
+            $(document).ready(function(){
+                Site.init({
+                    logoId : '#logo',
+                    ip: '96.39.167.137',
+                    userLoggedIn : true,
+                    userId : '24746',
+                    userEmail : 'murphykg@yahoo.com',
+                    showHelpButton : true,
+                    helpButtonId : '#help-button',
+                    ticketUpdateCountId : '#ticket-update-count'
+                });
+            });
+
+
+            
+                        $(document).ready(function(){
+                $('.logout-button').on('click',function(){
+                    Site.confirmModal({
+                        message : 'Are you sure you want to logout?',
+                        response : function( yes ) {
+                            if ( yes ) {
+                                Utils.redirectTo('/r/site/user/logout');
+                            }
+                        }
+                    });
+                    return false;
+                });
+            });
+                    </script>
+        <!-- perf: 0.0261 secs -->
+    </body>
 </html>
